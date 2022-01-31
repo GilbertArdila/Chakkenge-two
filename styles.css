@@ -15,7 +15,7 @@ body{
     align-items: center;
     padding-top:300px;
 }
-.btn-iniciar{
+.btn-primary{
     position:relative;
     width: 317px;
     height: 114px;
@@ -26,7 +26,7 @@ body{
     color: #FFFFFF;
     margin-bottom: 53px;
 }
-.btn-agregar {
+.btn-secondary {
     width: 280px;
     height: 67px;
     font-weight: 400;
@@ -46,6 +46,11 @@ body{
     }
     .logo img{
         content: url('./logos/logox0.75.png');
+    }
+    .tittle{
+        position:relative;
+        left:40px;
+        top:96px;
     }
 
 }

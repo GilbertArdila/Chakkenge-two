@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agregar palabra</title>
+    <link  rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .logo{
+            width:300px;
+        }
+        .tittle{
+            position:relative;
+            left:376px;
+            top:106px;
+            width:500px;
+            height:100px;
+        }
+        .main-Agregar{
+            position:relative;
+            top:108px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-top:300px;
+        }
+        .main-Agregar img{
+            position:relative;
+            left:79px;
+            top:-150px
+        }
+        .info{
+            position:relative;
+            top:-150px;
+            left:99px;
+            width: 201px;
+        }
+        .btn-guardar{
+            position:relative;
+            Width: 332px;
+            Height: 67px;
+            top:-50px;
+            margin-right: 24px;
+            left:-140px;
+
+        }
+        .btn-Cancelar{
+            position:relative;
+            Width: 332px;
+            Height: 67px;
+            top:-77px;
+            left:-100px;
+        }
+
+
+
+        .tittle p{
+            font-family: Inter,serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 150%;
+            color: #0A3871;
+            
+        }
+        @media (min-width: 768px){
+
+            .logo{
+                position:relative;
+                left:40px;
+                top:75px;
+            }
+            .tittle{
+                left:40px;
+                top:140px;
+            }
+            .main-Agregar{
+                top:155px
+            }
+            .main-Agregar img{
+
+                top:-100px
+            }
+            .info{
+
+                top:-100px;
+
+            }
+            .btn-guardar{
+
+                top:0;
+            }
+            .btn-Cancelar{
+                top:-24px;
+            }
+
+
+        }
+        @media (max-width: 375px){
+            .logo{
+                left:16px;
+                top:24px;
+            }
+            .tittle{
+                left:10px;
+                top:50px;
+            }
+            .main-Agregar{
+                top:240px
+            }
+            .main-Agregar img{
+
+                top:-200px;
+                left:-10px;
+            }
+            .info{
+
+                top:-200px;
+                left:0;
+
+            }
+            .btn-guardar{
+                position:absolute;
+                top:150px;
+                left:10px;
+                width:250px;
+            }
+            .btn-Cancelar{
+                position:absolute;
+                top:250px;
+                left:10px;
+                width:250px;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="logo">
+        <img src="./logos/logox1.png" alt="Alura">
+    </nav>
+    <div class="tittle">
+        <p>Ingrese una palabra</p>
+    </div>
+    <main class="main-Agregar">
+        <img src="./logos/Vectoravisox1.png" alt="info">
+        <p class="info"><small>max de 8 letras</small></p>
+        <button class=" btn-primary btn-guardar">Guardar y empezar</button>
+        <button class=" btn-secondary btn-Cancelar">Cancelar</button>
+    </main>
+
+</div>
+</body>
+</html>
