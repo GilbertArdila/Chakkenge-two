@@ -8,6 +8,7 @@ body{
    position:relative;
     left:84px;
     top:40px;
+    width:200px;
 }
 .main-body{
     display:flex;

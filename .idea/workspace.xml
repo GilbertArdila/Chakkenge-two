@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e6a16b-1154-473c-a186-a1894add756a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/agregar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logos/Vector@avisox0.50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logos/Vector@avisox0.75.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logos/Vectoravisox1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agregar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agregar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jugar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jugar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jugar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/agregar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>

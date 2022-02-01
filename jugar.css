@@ -1,0 +1,50 @@
+.canvas-container{
+    position:relative;
+    width:1000px;
+    height:400px;
+    left:120px;
+    top:50px;
+
+}
+#canvas{
+    position:relative;
+    width:100%;
+    height:100%;
+
+}
+
+
+.logo{
+
+}
+.main-body{
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:50px;
+}
+.main-body button{
+    position: relative;
+    top: -250px;
+    margin: 10px;
+}
+.btn-NuevoJuego{
+    height: 67px;
+}
+@media (max-width: 375px){
+
+    .main-body button{
+        position: absolute;
+
+    }
+
+    .main-body .btn-NuevoJuego{
+
+        top: 741px;
+        width: 280px;
+    }
+    .main-body .btn-Desistir{
+        top: 841px;
+    }
+}

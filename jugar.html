@@ -5,22 +5,25 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>El ahorcado</title>
+    <title>Juego nuevo</title>
     <link  rel="stylesheet" type="text/css" href="styles.css">
+   <link rel="stylesheet" type="text/css" href="jugar.css">
 </head>
 <body>
 <div class="container">
     <nav class="logo">
         <img src="./logos/logox1.png" alt="Alura">
     </nav>
+    <div class="canvas-container" >
+        <canvas id="canvas"></canvas>
+    </div>
     <main class="main-body">
-        <button class=" btn-primary btn-iniciar" id="iniciar">Iniciar juego</button>
-        <button class=" btn-secondary btn-agregar" id="agregar">Agregar nueva palabra</button>
+        <button class=" btn-primary btn-NuevoJuego" id="nuevo">Nuevo juego</button>
+        <button class=" btn-secondary btn-Desistir" id="salir">Desistir</button>
     </main>
 
 </div>
-<script src="index.js"></script>
 
-
+<script src="jugar.js"></script>
 </body>
 </html>
