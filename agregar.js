@@ -3,8 +3,7 @@
   */
 let palabras=["HTML","CSS","JAVASCRIPT"];
 localStorage=window.localStorage;
-localStorage.setItem("palabras",palabras);
-console.log(localStorage);
+
 
 //captamos elementos de la página agregar palabra
 var cancelar=document.getElementById("cancelar");
@@ -18,6 +17,9 @@ guardar.addEventListener("click",function(){
     /*agregamos la palabra al array*/
     palabras.push(nuevo);
     alert("La palabra "+nuevo+" se ha agregado exitosamente")
+    console.log(palabras);
+    localStorage.setItem("palabras",palabras);
+    console.log(localStorage);
     window.location.href = "index.html";
 
 })

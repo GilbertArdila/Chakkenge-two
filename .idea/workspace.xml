@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e6a16b-1154-473c-a186-a1894add756a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/agregar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agregar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jugar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jugar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jugar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agregar.css" beforeDir="false" afterPath="$PROJECT_DIR$/agregar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/agregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/agregar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agregar.js" beforeDir="false" afterPath="$PROJECT_DIR$/agregar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jugar.css" beforeDir="false" afterPath="$PROJECT_DIR$/jugar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jugar.html" beforeDir="false" afterPath="$PROJECT_DIR$/jugar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jugar.js" beforeDir="false" afterPath="$PROJECT_DIR$/jugar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +60,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,6 +73,7 @@
       <workItem from="1643645554044" duration="1291000" />
       <workItem from="1643647089730" duration="952000" />
       <workItem from="1643648465716" duration="12269000" />
+      <workItem from="1643820392271" duration="5658000" />
     </task>
     <servers />
   </component>
@@ -91,5 +93,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

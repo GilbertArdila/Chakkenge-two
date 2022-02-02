@@ -40,6 +40,25 @@ body{
     border-radius: 24px;
 
 }
+footer{
+    display:flex;
+    position: relative;
+    bottom: 0;
+    background-color:black;
+    width:100%;
+    margin-top:20px;
+    color:white;
+    place-items: flex-end;
+}
+footer>img{
+    height:100px;
+}
+.mail{
+    background-color:white;
+    height:50px;
+    margin: 0 10px 10px 10px;
+    border-radius:50%;
+}
 @media (max-width: 768px){
     .logo{
         left:40px;

@@ -1,9 +1,16 @@
+body{
+    height:400px;
+    width:100%;
+}
+.container{
+    height:630px;
+}
 .canvas-container{
     position:relative;
-    width:1000px;
-    height:400px;
+    width:80%;
+    height:377px;
     left:120px;
-    top:50px;
+    top:40px;
 
 }
 #canvas{
@@ -14,15 +21,14 @@
 }
 
 
-.logo{
 
-}
-.main-body{
+.principal-body{
     position:relative;
     display:flex;
     flex-direction: row;
     justify-content: center;
-    margin-top:50px;
+    margin-top:40px;
+    height:133px;
 }
 .main-body button{
     position: relative;
@@ -31,6 +37,25 @@
 }
 .btn-NuevoJuego{
     height: 67px;
+}
+footer{
+    display:flex;
+    position: relative;
+    bottom: 123px;
+    background-color:black;
+    width:100%;
+    margin-top:128px;
+    color:white;
+    place-items: flex-end;
+}
+footer>img{
+    height:100px;
+}
+.mail{
+    background-color:white;
+    height:50px;
+    margin: 0 10px 10px 10px;
+    border-radius:50%;
 }
 @media (max-width: 375px){
 

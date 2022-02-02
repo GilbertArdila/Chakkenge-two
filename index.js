@@ -1,4 +1,5 @@
-
+var palabras=localStorage.getItem("palabras");
+console.log(palabras);
 
 
 /*
@@ -35,12 +36,7 @@ function agregarPalabra(palabras){
     palabras.push(nuevo);
 }
 
-function random(palabras){
 
-    var rand=~~(Math.random()*palabras.length);
-    var choose=palabras[rand]
-    document.write(choose);
-}
 
 
 

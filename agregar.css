@@ -71,6 +71,25 @@
     color: #0A3871;
 
 }
+footer{
+    display:flex;
+    position: relative;
+    bottom: -100px;
+    background-color:black;
+    width:100%;
+    margin-top:20px;
+    color:white;
+    place-items: flex-end;
+}
+footer>img{
+    height:100px;
+}
+.mail{
+    background-color:white;
+    height:50px;
+    margin: 0 10px 10px 10px;
+    border-radius:50%;
+}
 @media (min-width: 768px){
 
     .logo{
@@ -104,6 +123,7 @@
 
 
 }
+
 @media (max-width: 375px){
     .logo{
         left:16px;
