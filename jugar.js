@@ -7,17 +7,19 @@ var salir=document.getElementById("salir");
 var pantalla=document.querySelector("canvas");
 var pincel= pantalla.getContext("2d");
 let letra;
-
+/* ************************************************************ */
 function random(palabras){
 
     var rand=~~(Math.random()*palabras.length);
     var choose=palabras[rand]
     return choose;
 }
+/* ************************************************************ */
 
 var choosed=random(palabras).toString();
 console.log(choosed);
 var num=choosed.length;
+/* ************************************************************ */
 
 nuevoJuego.addEventListener("click",function(){
 
@@ -44,26 +46,7 @@ nuevoJuego.addEventListener("click",function(){
          ahorcado(8);
          ahorcado(9);
         
-         /*
-capturamos el evento onkeydown para saber que tecla presiona el usuario y la mostramos en el textarea
-*/
-window.onkeydown= function(event){
-    letra=event.key;
-    letra=letra.toUpperCase();
-    var escribir=document.getElementById("texto");
-    for(var i in choosed){
-        if(letra===choosed[i]){
-            console.log(choosed[i]);
-            break;
-        }else{
-            //escribir.textContent+=letra;
-            console.log("no existe");
-
-        }
-    }
-    
-    
-}
+         capturarLetra();
 
 
 })
@@ -71,6 +54,7 @@ window.onkeydown= function(event){
 
     
 
+/* ************************************************************ */
 
 var a=5;
 var b=140;
@@ -84,6 +68,7 @@ function crearLinea(a,b,x,y){
     pincel.strokeStyle="black";
     pincel.stroke();
 }
+/* ************************************************************ */
 
 function replicarLinea(numero) {
     for(var i=0;i<numero;i++){
@@ -92,6 +77,7 @@ function replicarLinea(numero) {
         x+=30;
     }
 }
+/* ************************************************************ */
 
 function crearCirculo(x,y,radio){
         
@@ -100,6 +86,7 @@ function crearCirculo(x,y,radio){
     pincel.arc(x, y, radio, 0, 2*3.14);
     pincel.fill();
 }
+/* ************************************************************ */
 
 function ahorcado(intentos){
     if(intentos==1){
@@ -131,9 +118,39 @@ function ahorcado(intentos){
     }
 
 }
+/* ************************************************************ */
+
+function capturarLetra(){
+
+    var escribir=document.getElementById("texto");
+
+    window.onkeydown= function(event){
+        letra=event.key;
+        letra=letra.toUpperCase();
+
+        if(choosed.includes(letra)){
+             for(var i in choosed){
+                 if(letra===choosed[i]){
+                     console.log("encontrada"+i);
+                 }
+             }
+        }else{
+            escribir.textContent+=letra;
+        }
+    }
+}
+/* ************************************************************ */
+function pintarLetra(letra,index){
+    pincel.strokeStyle="black";
+    pincel.font="30pt Verdana";
+    pincel.fillText(letra,index);
+}
+
+/* ************************************************************ */
 
 salir.addEventListener("click",function(){
     window.location.href = "index.html";
 })
+/* ************************************************************ */
 
 
