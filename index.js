@@ -27,27 +27,10 @@ agregar.addEventListener("click",function(){
 })
 
 
-function agregarPalabra(palabras){
-
-    var nuevo= prompt("Ingresa una palabra nueva");
-    /*cambiamos la palabra introducida a mayuscula*/
-    nuevo=nuevo.toUpperCase();
-    /*agregamos la palabra al array*/
-    palabras.push(nuevo);
-}
 
 
 
 
 
-/*
-capturamos el evento onkeydown para saber que tecla presiona el usuario y la mostramos en el textarea
-*/
-window.onkeydown= function(event){
-    var letra=event.key;
-    letra=letra.toUpperCase();
-    console.log(letra);
-    var escribe=document.getElementById('texto');
-    escribe.value+=letra;
 
-}
+

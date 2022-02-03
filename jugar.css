@@ -5,12 +5,23 @@ body{
 .container{
     height:630px;
 }
+.tablero{
+    position: relative;
+    left:350px;
+    width: 150px;
+    height: auto;
+}
+#texto{
+    color:red;
+    font-weight: bold;
+    font-size: 24px;
+}
 .canvas-container{
     position:relative;
     width:80%;
     height:377px;
     left:120px;
-    top:40px;
+    top:30px;
 
 }
 #canvas{

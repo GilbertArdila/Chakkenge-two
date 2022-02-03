@@ -11,16 +11,31 @@ var nueva=document.getElementById("agregar");
 var guardar=document.getElementById("guardar");
 
 guardar.addEventListener("click",function(){
-    var nuevo= nueva.value;
-    /*cambiamos la palabra introducida a mayuscula*/
+  var nuevo= nueva.value;
+  
+  if(nueva.value != ""){
+    
+    if(nuevo.length <= 10){
+      
+         /*cambiamos la palabra introducida a mayuscula*/
     nuevo=nuevo.toUpperCase();
     /*agregamos la palabra al array*/
     palabras.push(nuevo);
     alert("La palabra "+nuevo+" se ha agregado exitosamente")
-    console.log(palabras);
+   
     localStorage.setItem("palabras",palabras);
-    console.log(localStorage);
+   
     window.location.href = "index.html";
+    }else{
+      alert("La palabra "+nuevo+" tiene más de 10 caracteres");
+      nueva.value="";
+      
+    }
+    
+  }else{
+    window.location.href = "index.html";
+  }
+    
 
 })
 
