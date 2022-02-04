@@ -1,8 +1,10 @@
 
+let palabras=["HTML","CSS","JAVASCRIPT"];
+localStorage=window.localStorage;
 
-var palabras=localStorage.getItem("palabras");
+localStorage.setItem("palabras",palabras);
+console.log(localStorage);
 console.log(palabras);
-
 
 /*
   captamos los botónes para darles funciones
