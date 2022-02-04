@@ -6,16 +6,25 @@ body{
     height:630px;
 }
 .tablero{
-    position: relative;
-    left:350px;
-    width: 150px;
+    position: absolute;
+    left:250px;
+    width: 350px;
     height: auto;
+    z-index: 101;
 }
 #texto{
     color:red;
     font-weight: bold;
     font-size: 24px;
+    width: 100%;
 }
+.resultado{
+    position: absolute;
+    left:842px;
+    top:100px;
+    z-index: 100;
+}
+
 .canvas-container{
     position:relative;
     width:80%;
@@ -44,10 +53,18 @@ body{
 .main-body button{
     position: relative;
     top: -250px;
-    margin: 10px;
 }
 .btn-NuevoJuego{
     height: 67px;
+    margin-right: 20px;
+}
+#repetir{
+    position: absolute;
+    top: 470px;
+    left: 900px;
+    width: 200px;
+    display: none;
+    text-align:start;
 }
 footer{
     display:flex;

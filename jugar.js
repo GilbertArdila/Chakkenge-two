@@ -1,11 +1,14 @@
 var palabras=localStorage.getItem("palabras");
 palabras=palabras.split(",");
 console.log(palabras);
-
+var imagen=document.getElementById("imagen");
 var nuevoJuego=document.getElementById("nuevo");
 var salir=document.getElementById("salir");
+var repetir=document.getElementById("repetir");
+var resultado=document.getElementById("resultado");
 var pantalla=document.querySelector("canvas");
 var pincel= pantalla.getContext("2d");
+
 let letra;
 /* ************************************************************ */
 function random(palabras){
@@ -18,11 +21,12 @@ function random(palabras){
 
 var choosed=random(palabras).toString();
 console.log(choosed);
-var num=choosed.length;
+let num=choosed.length;
 /* ************************************************************ */
 
 nuevoJuego.addEventListener("click",function(){
-
+    //escondemos el botón una vez iniciado el juego
+         nuevoJuego.style.display="none";
          pincel.fillStyle="lightgrey";
          pincel.fillRect(0,0,800,400);
          pincel.fillStyle="black";
@@ -34,23 +38,49 @@ nuevoJuego.addEventListener("click",function(){
          pincel.strokeStyle="black";
          pincel.stroke();
          replicarLinea(num)
-         ahorcado(1);
-        
-         ahorcado(2);
-         ahorcado(3);
-         ahorcado(4);
-        
-         ahorcado(5);
-         ahorcado(6);
-         ahorcado(7);
-         ahorcado(8);
-         ahorcado(9);
-        
          capturarLetra();
+         
 
 
 })
+/* ************************************************************ */
+function pintarAhorcado(index){
+    switch(index){
+        case 1:
+            ahorcado(1);
+        break;
+        case 2:
+            ahorcado(2);
+        break;
+        case 3:
+            ahorcado(3);
+        break;
+        case 4:
+            ahorcado(4);
+        break;
+        case 5:
+            ahorcado(5);
+        break;
+        case 6:
+            ahorcado(6);
+        break;
+        case 7:
+            ahorcado(7);
+        break;
+        case 8:
+            ahorcado(8);
+        break;
+        case 9:
+            ahorcado(9);
+        break;
+        case 10:
+            ahorcado(10);
 
+        break;
+
+    }
+
+}
 
     
 
@@ -121,30 +151,112 @@ function ahorcado(intentos){
 /* ************************************************************ */
 
 function capturarLetra(){
-
+   
     var escribir=document.getElementById("texto");
+    escribir.textContent="";
+    var permitidas=/[A-Z]/;
+    var usadas=[];
+    let errores=0;
+    var aciertos=0;
 
     window.onkeydown= function(event){
         letra=event.key;
         letra=letra.toUpperCase();
-
-        if(choosed.includes(letra)){
-             for(var i in choosed){
-                 if(letra===choosed[i]){
-                     console.log("encontrada"+i);
-                 }
-             }
+        if(permitidas.test(letra)===false){
+           alert(letra+" no es una letra");
         }else{
-            escribir.textContent+=letra;
+            if(usadas.includes(letra)){
+               alert("La letra "+letra+" ya las has usado en este juego, no se puede repetir letra");
+            }else{
+                if(choosed.includes(letra)){
+                    for(var i in choosed){
+                        if(letra===choosed[i]){
+                            let index=parseInt(i)
+                            agregarLetra(index+1,letra);
+                            usadas.push(letra);
+                            index=0;
+                            aciertos++;
+                            if(aciertos===choosed.length){
+                                imagen.setAttribute("src","https://image.freepik.com/vector-gratis/ganaste-ilustracion_183875-222.jpg");
+                                repetir.style.display="inline"
+                            }
+                        }
+                    }
+                }else{
+                    escribir.textContent+=letra;
+                    usadas.push(letra);
+                    errores++;
+                    pintarAhorcado(errores)
+                    if(errores===9){
+                        imagen.setAttribute("src","https://png.pngtree.com/png-clipart/20210311/original/pngtree-you-lost-neon-game-art-png-image_6040395.jpg");
+                        escribir.textContent="La palabra era "+choosed;
+                        repetir.style.display="inline";
+                        repetir.style.left="900px";
+                        repetir.style.top="470px";
+                        resultado.style.left="850px";
+                        resultado.style.top="100px";
+                       
+                    }
+                }
+            }
+            
+
         }
+
+
+
+       
     }
 }
+
+
 /* ************************************************************ */
-function pintarLetra(letra,index){
-    pincel.strokeStyle="black";
-    pincel.font="30pt Verdana";
-    pincel.fillText(letra,index);
+function agregarLetra(index,letra){
+
+    switch(index){
+        case 1:
+            pintarLetra(letra,5,140)
+        break;
+        case 2:
+            pintarLetra(letra,35,140)
+        break;
+        case 3:
+            pintarLetra(letra,65,140)
+        break;
+        case 4:
+            pintarLetra(letra,95,140)
+        break;
+        case 5:
+            pintarLetra(letra,125,140)
+        break;
+        case 6:
+            pintarLetra(letra,155,140)
+        break;
+        case 7:
+            pintarLetra(letra,185,140)
+        break;
+        case 8:
+            pintarLetra(letra,215,140)
+        break;
+        case 9:
+            pintarLetra(letra,245,140)
+        break;
+        case 10:
+            pintarLetra(letra,275,140)
+
+        break;
+
+    }
+
+
 }
+
+/* ************************************************************ */
+    function pintarLetra(letra,x,y){
+        pincel.strokeStyle="black";
+        pincel.font="30pt Verdana";
+        pincel.fillText(letra,x,y);
+    }
 
 /* ************************************************************ */
 
@@ -152,5 +264,7 @@ salir.addEventListener("click",function(){
     window.location.href = "index.html";
 })
 /* ************************************************************ */
-
+repetir.addEventListener("click",function(){
+    window.location.href = "jugar.html";
+})
 

@@ -1,3 +1,5 @@
+
+
 var palabras=localStorage.getItem("palabras");
 console.log(palabras);
 
