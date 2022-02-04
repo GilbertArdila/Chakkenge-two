@@ -1,6 +1,5 @@
 var palabras=localStorage.getItem("palabras");
 palabras=palabras.split(",");
-console.log(palabras);
 var imagen=document.getElementById("imagen");
 var nuevoJuego=document.getElementById("nuevo");
 var salir=document.getElementById("salir");
@@ -20,7 +19,6 @@ function random(palabras){
 /* ************************************************************ */
 
 var choosed=random(palabras).toString();
-console.log(choosed);
 let num=choosed.length;
 /* ************************************************************ */
 

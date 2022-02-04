@@ -2,7 +2,6 @@
 
 var palabras=localStorage.getItem("palabras");
 palabras=palabras.split(",");
-console.log(palabras);
 
 //captamos elementos de la página agregar palabra
 var cancelar=document.getElementById("cancelar");
@@ -22,7 +21,7 @@ guardar.addEventListener("click",function(){
     palabras.push(nuevo);
     alert("La palabra "+nuevo+" se ha agregado exitosamente")
     localStorage.setItem("palabras",palabras);
-      console.log(localStorage);
+      
     window.location.href = "index.html";
     }else{
       alert("La palabra "+nuevo+" tiene más de 10 caracteres");
