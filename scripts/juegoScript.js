@@ -2,6 +2,7 @@ let teclado=document.getElementById("teclado")
 teclado.style.display="none";
 
 let palabras=sessionStorage.getItem("palabras");
+console.log(palabras);
 palabras=palabras.split(",");
 
 var screen=document.getElementById("canvas");
@@ -38,7 +39,7 @@ function azar(palabras){
 
 
 var choosed=azar(palabras).toString();
-console.log(choosed);
+
 let num=choosed.length;
 /* ***************************Función para pintar la pantalla inicial*****************/
 function lienzo(){
