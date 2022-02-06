@@ -1,0 +1,178 @@
+body{
+    background-color:floralwhite;
+    margin: 0;
+}
+.container-logo{
+    position: relative;
+    width:31.09px ;
+    height: 48px;
+    top:40px;
+    left: 84px;
+}
+.container-tablero{
+    position: relative;
+    left: 200px;
+    top:20px;
+    width: 600px;
+    height: 200px;
+}
+.container-tablero canvas{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container-texto{
+    position:absolute;
+    width: 300px;
+    left:200px ;
+    top:290px;
+}
+.container-texto strong{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container-teclado{
+    display: none;
+}
+.container-buttons{
+
+    position: relative;
+    left:300px;
+    top:120px;
+    display: flex;
+    width: 400px;
+    align-items: center;
+
+}
+.primary-button{
+background-color: #0A3871;
+color: white;
+}
+.secondary-button{
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+.nuevo-button{
+    
+    Width :332px;
+    Height :67px;
+    border-radius: 24px;
+    Padding :24px;
+    margin-right: 20px;
+}
+.otravez-button{
+    display: none;
+    Width :332px;
+    Height :67px;
+    border-radius: 24px;
+    Padding :24px;
+    margin-right: 20px;
+}
+.desistir-button{
+    position: relative;
+    Width :332px;
+    Height :67px;
+    border-radius: 24px;
+    Padding :24px;
+}
+
+.footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    top:236px;
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    width: 100px;
+}
+.footer-mail-img{
+    position: relative;
+    background-color:white;
+    margin: 0 20px 0 120px;    
+}
+.footer p{
+    color: white;
+}
+
+
+@media (max-width:1400px){
+    
+    .container-buttons{
+        
+        left:400px;
+    }
+    
+}    
+
+@media (max-width:992px){
+   
+   
+    .container-buttons{
+        top:200px;
+        left:300px;
+    }
+   
+}
+@media (max-width:768px){
+   .container-tablero{
+       width: 500pxr;
+   }
+   
+    .container-buttons{
+        
+        left:200px;
+    }
+    .container-logo{
+        left: 34px;
+    }
+    .logo{
+        src: "/logos/logox0.50.png";
+    }
+}
+@media (max-width:576px){
+   .container-tablero{
+       left: 100px;
+       width: 400px;
+   }
+    .container-texto{
+        top:25px;
+    }
+    .container-teclado{
+        position: absolute;
+        display: block;
+        left: 170px;
+        top:280px;
+        width: 200px;
+        height: 40px;
+       
+      
+    }
+    
+    .container-teclado input{
+        width: 100%;
+        height: 60%;
+        position: relative;
+        color: blue;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .container-buttons{
+        flex-direction: column;
+        left:70px;
+        top:100px;
+    }
+    .nuevo-button{
+        margin-bottom: 20px;
+    }
+    
+    .footer{
+        top:135px;
+    }
+    .footer-mail-img{
+        margin: 0 20px 0 60px; 
+    }
+
+}

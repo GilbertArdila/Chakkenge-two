@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugar</title>
+    <link rel="StyleSheet" type="text/css" href="../styles/jugarStyles.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img class="logo" src="../logos/logox1.png" alt="Alura">
+        </div>
+      <div class="container-tablero">
+          <canvas id="canvas"></canvas>
+      </div>
+      <div class="container-texto">
+          <strong id="texto"></strong>
+      </div>
+     <div class="container-teclado" >
+         <input type="text" placeholder="ingresa una letra" id="teclado" onkeyup="input()">
+     </div>
+      
+        <div class="container-buttons">
+           
+            <button class="primary-button nuevo-button" id="nuevo">Nuevo juego</button>
+            <button class="secondary-button desistir-button" id="salir">Desistir</button>
+            <button class="primary-button otravez-button" id="denuevo">De nuevo</button>
+        </div>
+        <footer class="footer">
+            <img class="footer-logo" src="../logos/LogoMakr-7oqQgk.png" alt="underground">
+        <img class="footer-mail-img" src="../logos/mail.png" alt="mail">
+        <p class="footer-mail">undergroundsoftwaredevelopment@gmail.com</p>
+        </footer>
+    </div>
+  
+    
+<script src="../scripts/juegoScript.js"></script>      
+</body>
+</html>

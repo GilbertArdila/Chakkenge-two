@@ -1,0 +1,165 @@
+body{
+    background-color:floralwhite;
+    margin: 0;
+}
+.container-logo{
+    position: relative;
+    width:31.09px ;
+    height: 48px;
+    top:40px;
+    left: 84px;
+}
+.container-titulo{
+    position: relative;
+    width: 300px;
+    left:400px;
+    top:110px;
+}
+.container-titulo strong{
+    color:#0A3871 ;
+    font-size: 24px;
+}
+.container-titulo input{
+    margin-top: 20px;
+    color: blue;
+    font-size: 24px;
+}
+.alert{
+    position: relative;
+     width: 150px;
+     display: flex;
+     left:520px;
+     top:250px;
+
+}
+.alert small{
+    margin-left: 20px;
+}
+.container-buttons{
+
+    position: relative;
+    left:300px;
+    top:260px;
+    display: flex;
+    width: 400px;
+    align-items: center;
+
+}
+.primary-button{
+background-color: #0A3871;
+color: white;
+}
+.secondary-button{
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+.guardar-button{
+    
+    Width :332px;
+    Height :67px;
+    border-radius: 24px;
+    Padding :24px;
+    margin-right: 20px;
+}
+.cancelar-button{
+    position: relative;
+    Width :332px;
+    Height :67px;
+    border-radius: 24px;
+    Padding :24px;
+}
+.footer{
+    background-color: black;
+    position: relative;
+    width: 100%;
+    bottom: -277px;
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    width: 100px;
+}
+.footer-mail-img{
+    position: relative;
+    background-color:white;
+    margin: 0 20px 0 120px;    
+}
+.footer p{
+    color: white;
+}
+
+
+@media (max-width:1400px){
+    
+    .container-buttons{
+        
+        left:400px;
+    }
+    .alert{
+        left:400px;
+    }
+}    
+
+@media (max-width:992px){
+    
+    .container-titulo{
+        left: 300px;
+    }
+    .container-buttons{
+        top:250px;
+        left:300px;
+    }
+    .alert{
+        top:230px;
+        left:300px;
+    }
+   .footer{
+    bottom: -279px;
+   }
+}
+@media (max-width:768px){
+   
+    .container-titulo{
+        left: 200px;
+    }
+    .alert{
+        left:200px;
+    }
+    .container-buttons{
+        
+        left:200px;
+    }
+    .container-logo{
+        left: 34px;
+    }
+    .logo{
+        src: "/logos/logox0.50.png";
+    }
+}
+@media (max-width:576px){
+   
+    .container-titulo{
+        left: 100px;
+        top:90px;
+    }
+    .alert{
+        top:150px;
+        left:100px;
+    }
+    
+    .container-buttons{
+        flex-direction: column;
+        left:70px;
+        top:160px;
+    }
+    .guardar-button{
+        margin-bottom: 20px;
+    }
+    .footer{
+        top:192px;
+    }
+    .footer-mail-img{
+        margin: 0 20px 0 60px; 
+    }
+
+}
