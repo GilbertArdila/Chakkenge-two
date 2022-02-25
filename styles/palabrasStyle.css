@@ -1,6 +1,11 @@
+
 body{
+    display: flex;
+    flex-direction: column;
     background-color:floralwhite;
     margin: 0;
+    height: auto;
+    width: 100%;
 }
 .container-logo{
     position: relative;
@@ -12,7 +17,7 @@ body{
 .container-titulo{
     position: relative;
     width: 300px;
-    left:400px;
+    left:10px;
     top:110px;
 }
 .container-titulo strong{
@@ -28,8 +33,8 @@ body{
     position: relative;
      width: 150px;
      display: flex;
-     left:520px;
-     top:250px;
+     left:10px;
+     top:143px;
 
 }
 .alert small{
@@ -38,10 +43,10 @@ body{
 .container-buttons{
 
     position: relative;
-    left:300px;
-    top:260px;
+    left:10px;
+    top:173px;
     display: flex;
-    width: 400px;
+    width: 292px;
     align-items: center;
 
 }
@@ -70,9 +75,9 @@ color: white;
 }
 .footer{
     background-color: black;
-    position: relative;
+    position: absolute;
     width: 100%;
-    bottom: -277px;
+    bottom: 0;
     display: flex;
     align-items: center;
 }
@@ -82,61 +87,12 @@ color: white;
 .footer-mail-img{
     position: relative;
     background-color:white;
-    margin: 0 20px 0 120px;    
+    margin: 0 20px 0 10px;    
 }
 .footer p{
     color: white;
 }
-
-
-@media (max-width:1400px){
-    
-    .container-buttons{
-        
-        left:400px;
-    }
-    .alert{
-        left:400px;
-    }
-}    
-
-@media (max-width:992px){
-    
-    .container-titulo{
-        left: 300px;
-    }
-    .container-buttons{
-        top:250px;
-        left:300px;
-    }
-    .alert{
-        top:230px;
-        left:300px;
-    }
-   .footer{
-    bottom: -279px;
-   }
-}
-@media (max-width:768px){
-   
-    .container-titulo{
-        left: 200px;
-    }
-    .alert{
-        left:200px;
-    }
-    .container-buttons{
-        
-        left:200px;
-    }
-    .container-logo{
-        left: 34px;
-    }
-    .logo{
-        src: "/logos/logox0.50.png";
-    }
-}
-@media (max-width:576px){
+@media (min-width:576px){
    
     .container-titulo{
         left: 100px;
@@ -156,10 +112,60 @@ color: white;
         margin-bottom: 20px;
     }
     .footer{
-        top:192px;
+        width: 100%;
+        bottom:0;
     }
     .footer-mail-img{
-        margin: 0 20px 0 60px; 
+        margin: 0 10px 0 10px; 
     }
 
 }
+
+@media (min-width:768px){
+   
+    .container-titulo{
+        left: 200px;
+    }
+    .alert{
+        left:200px;
+    }
+    .container-buttons{
+        
+        left:200px;
+    }
+    .container-logo{
+        left: 34px;
+    }
+    .logo{
+        src: "/logos/logox0.50.png";
+    }
+}
+
+@media (min-width:992px){
+    
+    .container-titulo{
+        left: 300px;
+    }
+    .container-buttons{
+        top:250px;
+        left:300px;
+    }
+    .alert{
+        top:230px;
+        left:300px;
+    }
+   .footer{
+    bottom: 0;
+   }
+}
+
+@media (min-width:1400px){
+    
+    .container-buttons{
+        
+        left:400px;
+    }
+    .alert{
+        left:400px;
+    }
+} 
