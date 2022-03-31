@@ -1,45 +1,36 @@
+<<<<<<< HEAD
 body{
     display: flex;
     flex-direction: column;
     background-color:floralwhite;
+=======
+*{
+    box-sizing: border-box;
+    padding: 0;
+>>>>>>> makeOver
     margin: 0;
 }
-.container-logo{
-    position: relative;
-    width:31.09px ;
-    height: 48px;
-    top:40px;
-    left: 84px;
+html{
+    font-size: 62.5%;
 }
-.logo{
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-size: 1.6rem;
+    background-color:floralwhite;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpAmToc_lktaXjJKHgFPmJMtsucjbxtagyA&usqp=CAU');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.container{
     width: 100%;
-}
-.container-buttons{
-    position: relative;
-    left:400px;
-    top:110px;
+    height: 100%;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    align-items: center;
-
 }
-.primary-button{
-background-color: #0A3871;
-color: white;
-}
-.secondary-button{
-    border: 1px solid #0A3871;
-    color: #0A3871;
-}
-.iniciar-button{
-    
-    Width :317px;
-    Height :114px;
-    border-radius: 24px;
-    Padding :24px;
-    margin-bottom: 38px;;
-}
+<<<<<<< HEAD
 .agregar-button{
     position: relative;
     Width :280px;
@@ -52,57 +43,50 @@ color: white;
     position: absolute;
     width: 100%;
     bottom:0;
+=======
+.container-logo{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+}
+.container-buttons{
+>>>>>>> makeOver
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 150px 20px;
+   
 }
-.footer-logo{
-    width: 100px;
+.container-buttons button{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }
-.footer-mail-img{
-    position: relative;
-    background-color:white;
-    margin: 0 20px 0 120px;    
+.container-buttons button:hover{
+    transform: scale(1.2);
 }
-.footer p{
+.primary-button{
+    background-color: blue;
     color: white;
 }
-/* *************************************MEDIA QUERIES***************************************************************/
-
-@media (max-width:1400px){
-   
-    .container-buttons{
-        
-        left:400px;
-    }
-}    
-
-@media (max-width:992px){
-    
-    .container-buttons{
-        
-        left:300px;
-    }
+.secondary-button{
+    background-color: yellow;
 }
-@media (max-width:768px){
-    
-    .container-buttons{
-        
-        left:200px;
-    }
-    .container-logo{
-        left: 34px;
-    }
-    .logo{
-        src: "/logos/logox0.50.png";
-    }
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
 }
-@media (max-width:576px){
-    
-    .container-buttons{
-        left:100px;
+@media (min-width:576px){
+    footer{
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
     }
-    .footer-mail-img{
-        margin: 0 20px 0 60px; 
-    }
-
 }
