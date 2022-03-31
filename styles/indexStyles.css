@@ -11,6 +11,10 @@ body{
     grid-template-rows: auto 1fr;
     font-size: 1.6rem;
     background-color:floralwhite;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpAmToc_lktaXjJKHgFPmJMtsucjbxtagyA&usqp=CAU');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .container{
     width: 100%;
